@@ -1,0 +1,7 @@
+Politique fictive d'utilisation des outils internes
+
+Les outils internes doivent être utilisés uniquement dans un cadre professionnel. Les utilisateurs doivent protéger les informations auxquelles ils accèdent et signaler toute anomalie au support.
+
+Le partage d'identifiants est interdit. Les documents internes ne doivent pas être copiés vers des services externes non autorisés. Les accès doivent être revus régulièrement par les gestionnaires.
+
+En cas de doute sur l'utilisation d'un outil ou sur la confidentialité d'une information, l'utilisateur doit demander conseil à son gestionnaire ou au support.

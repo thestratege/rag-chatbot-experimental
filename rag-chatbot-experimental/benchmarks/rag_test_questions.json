@@ -1,0 +1,61 @@
+{
+  "questions": [
+    {
+      "question_id": "Q1_FACTUEL_SIMPLE",
+      "question": "Qui doit initier une demande d'accès à une application interne ?",
+      "expected_answer_hint": "Le gestionnaire direct du collaborateur doit initier la demande.",
+      "expected_sources": ["SRC-ACCES-001"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q2_PROCEDURE",
+      "question": "Quelle est la procédure pour réinitialiser un mot de passe ?",
+      "expected_answer_hint": "Ouvrir le portail d'assistance, sélectionner Mot de passe oublié, confirmer l'identité par second facteur, puis utiliser le lien envoyé.",
+      "expected_sources": ["SRC-MDP-001"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q3_SYNTHESE",
+      "question": "Résume les obligations principales pour créer et diffuser un rapport mensuel.",
+      "expected_answer_hint": "Utiliser le modèle officiel, compléter les sections requises, faire relire par le responsable, déposer avant le cinquième jour ouvrable avec le bon nommage.",
+      "expected_sources": ["SRC-RAPPORT-001", "SRC-RAPPORT-002"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q4_CITATION",
+      "question": "Quels éléments doivent figurer dans une notification interne ? Cite les sources.",
+      "expected_answer_hint": "Périmètre touché, heure de début, impact attendu, canal de suivi.",
+      "expected_sources": ["SRC-NOTIF-001"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q5_INFORMATION_ABSENTE",
+      "question": "Quelle est la procédure pour demander une carte bancaire professionnelle ?",
+      "expected_answer_hint": "Information absente du contexte, le modèle doit refuser exactement.",
+      "expected_sources": [],
+      "should_refuse_if_absent": true
+    },
+    {
+      "question_id": "Q6_REPONSE_COURTE",
+      "question": "Réponds en une phrase : sous quel délai un accès est-il accordé si la justification est complète ?",
+      "expected_answer_hint": "Sous deux jours ouvrables.",
+      "expected_sources": ["SRC-ACCES-002"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q7_ETAPES",
+      "question": "Liste les étapes à suivre si un utilisateur ne reçoit pas son lien de réinitialisation.",
+      "expected_answer_hint": "Vérifier les courriels indésirables, contacter le centre de services, vérification manuelle possible sans demander le mot de passe actuel.",
+      "expected_sources": ["SRC-MDP-002"],
+      "should_refuse_if_absent": false
+    },
+    {
+      "question_id": "Q8_REFUS_HALLUCINATION",
+      "question": "Quel est le numéro de téléphone du centre de services ?",
+      "expected_answer_hint": "Information absente du contexte, le modèle doit refuser exactement.",
+      "expected_sources": [],
+      "should_refuse_if_absent": true
+    }
+  ]
+}
+

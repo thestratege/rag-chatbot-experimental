@@ -1,0 +1,7 @@
+Procédure fictive de réinitialisation de mot de passe
+
+Lorsqu'un utilisateur oublie son mot de passe, il doit ouvrir une demande dans le portail support ou contacter le centre de services. Le support vérifie l'identité de l'utilisateur avant toute action.
+
+Après validation, un lien temporaire de réinitialisation est envoyé à l'adresse professionnelle de l'utilisateur. Ce lien expire après trente minutes. L'utilisateur doit choisir un nouveau mot de passe conforme aux règles de complexité internes.
+
+Si l'utilisateur n'a plus accès à son adresse professionnelle, la demande doit être validée par son gestionnaire.

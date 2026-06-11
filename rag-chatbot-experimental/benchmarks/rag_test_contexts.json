@@ -1,0 +1,61 @@
+{
+  "contexts": [
+    {
+      "source_id": "SRC-ACCES-001",
+      "file_name": "procedure_demande_acces.pdf",
+      "page": 2,
+      "chunk_id": "acces-p2-c1",
+      "text": "La demande d'accès à une application interne doit être initiée par le gestionnaire direct du collaborateur. La demande est soumise dans le portail de services, rubrique Accès applicatifs. Elle doit inclure le nom du collaborateur, son identifiant interne, son rôle, le type d'accès demandé et une justification opérationnelle."
+    },
+    {
+      "source_id": "SRC-ACCES-002",
+      "file_name": "procedure_demande_acces.pdf",
+      "page": 3,
+      "chunk_id": "acces-p3-c1",
+      "text": "Après soumission, la demande d'accès est examinée par le responsable applicatif. Si la justification est complète, l'accès est accordé sous deux jours ouvrables. Les accès temporaires doivent comporter une date de fin et sont automatiquement revus chaque mois."
+    },
+    {
+      "source_id": "SRC-MDP-001",
+      "file_name": "guide_reinitialisation_mot_de_passe.md",
+      "page": null,
+      "chunk_id": "mdp-c1",
+      "text": "Pour réinitialiser un mot de passe, l'utilisateur doit ouvrir le portail d'assistance, sélectionner Mot de passe oublié, puis confirmer son identité avec le second facteur d'authentification. Un lien de réinitialisation valable quinze minutes est ensuite envoyé sur l'adresse professionnelle enregistrée."
+    },
+    {
+      "source_id": "SRC-MDP-002",
+      "file_name": "guide_reinitialisation_mot_de_passe.md",
+      "page": null,
+      "chunk_id": "mdp-c2",
+      "text": "Si l'utilisateur ne reçoit pas le lien de réinitialisation, il doit vérifier son dossier de courriels indésirables puis contacter le centre de services. Le centre de services peut déclencher une vérification manuelle, mais ne doit jamais demander le mot de passe actuel de l'utilisateur."
+    },
+    {
+      "source_id": "SRC-RAPPORT-001",
+      "file_name": "procedure_creation_rapport.docx",
+      "page": null,
+      "chunk_id": "rapport-c1",
+      "text": "Un rapport mensuel doit être créé à partir du modèle officiel disponible dans l'espace documentaire interne. Le rédacteur doit compléter le résumé exécutif, les indicateurs du mois, les risques ouverts et les actions prévues pour le mois suivant."
+    },
+    {
+      "source_id": "SRC-RAPPORT-002",
+      "file_name": "procedure_creation_rapport.docx",
+      "page": null,
+      "chunk_id": "rapport-c2",
+      "text": "Avant diffusion, le rapport mensuel doit être relu par le responsable d'équipe. La version finale est déposée dans le dossier Rapports validés avant le cinquième jour ouvrable du mois. Le nom du fichier doit respecter le format rapport_equipe_YYYY_MM.pdf."
+    },
+    {
+      "source_id": "SRC-NOTIF-001",
+      "file_name": "procedure_notification_interne.txt",
+      "page": null,
+      "chunk_id": "notif-c1",
+      "text": "Une notification interne doit être envoyée lorsqu'une interruption de service dépasse quinze minutes ou lorsqu'un changement planifié affecte plus de vingt utilisateurs. La notification doit préciser le périmètre touché, l'heure de début, l'impact attendu et le canal de suivi."
+    },
+    {
+      "source_id": "SRC-NOTIF-002",
+      "file_name": "procedure_notification_interne.txt",
+      "page": null,
+      "chunk_id": "notif-c2",
+      "text": "Pour un incident critique, la première notification doit être envoyée dans les dix minutes suivant la qualification de l'incident. Une mise à jour doit ensuite être publiée toutes les trente minutes jusqu'au retour à la normale ou jusqu'à la communication d'un contournement validé."
+    }
+  ]
+}
+

@@ -1,0 +1,7 @@
+Procédure fictive de création de rapport
+
+Un rapport mensuel doit présenter le périmètre analysé, la période couverte, les indicateurs suivis, les écarts significatifs et les actions proposées. Les chiffres doivent provenir des sources de référence validées par l'équipe.
+
+Le rédacteur prépare une première version, puis la transmet au responsable métier pour relecture. Après validation, le rapport est déposé dans l'espace documentaire prévu et partagé avec les destinataires autorisés.
+
+Toute correction importante après publication doit être indiquée dans une note de version.

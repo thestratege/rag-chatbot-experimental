@@ -1,0 +1,7 @@
+FAQ fictive du support interne
+
+Le support traite en priorité les incidents bloquants, les demandes d'accès urgentes et les problèmes affectant plusieurs utilisateurs. Une demande doit contenir une description claire, l'impact observé, le service concerné et, si possible, une capture d'écran.
+
+Pour suivre une demande, l'utilisateur doit consulter le portail support avec le numéro de ticket. Les relances doivent être ajoutées au ticket existant afin de conserver l'historique.
+
+Le support ne demande jamais le mot de passe complet d'un utilisateur.

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "clear_access_001",
+    "question": "Quelles informations doit contenir une demande d'accès ?",
+    "profile": "demo-user",
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_acces.txt"],
+    "forbidden_sources": ["procedure_ti.txt"],
+    "must_contain_any": ["justification", "gestionnaire", "rôle"]
+  },
+  {
+    "id": "exact_term_001",
+    "question": "Quel est le code ORION-LOCAL-742 ?",
+    "profile": "demo-user",
+    "permission_modes": ["open"],
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_ti.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["ORION-LOCAL-742"]
+  },
+  {
+    "id": "vague_followup_001",
+    "question": "Et pour les accès ?",
+    "profile": "demo-user",
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_acces.txt"],
+    "forbidden_sources": ["procedure_ti.txt"],
+    "must_contain_any": ["accès"],
+    "notes": "À exécuter idéalement après une question liée aux procédures dans la même conversation."
+  },
+  {
+    "id": "absent_001",
+    "question": "Quelle est la politique de remboursement des billets d'avion ?",
+    "profile": "demo-user",
+    "expected_behavior": "refusal",
+    "expected_sources_any": [],
+    "forbidden_sources": ["procedure_ti.txt"],
+    "must_contain_any": ["Je ne trouve pas"]
+  },
+  {
+    "id": "ti_open_demo_user_001",
+    "question": "Quel est le code de validation du déploiement TI ?",
+    "profile": "demo-user",
+    "permission_modes": ["open"],
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_ti.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["ORION-LOCAL-742"]
+  },
+  {
+    "id": "ti_open_demo_ti_001",
+    "question": "Quel est le code de validation du déploiement TI ?",
+    "profile": "demo-ti",
+    "permission_modes": ["open"],
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_ti.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["ORION-LOCAL-742"]
+  },
+  {
+    "id": "ti_open_demo_admin_001",
+    "question": "Quel est le code de validation du déploiement TI ?",
+    "profile": "demo-admin",
+    "permission_modes": ["open"],
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_ti.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["ORION-LOCAL-742"]
+  },
+  {
+    "id": "ti_filtered_public_forbidden_001",
+    "question": "Quel est le code de validation du déploiement TI ?",
+    "profile": "demo-user",
+    "permission_modes": ["filtered"],
+    "expected_behavior": "refusal",
+    "expected_sources_any": [],
+    "forbidden_sources": ["procedure_ti.txt"],
+    "must_contain_any": ["Je ne trouve pas"]
+  },
+  {
+    "id": "ti_filtered_allowed_001",
+    "question": "Quel est le code de validation du déploiement TI ?",
+    "profile": "demo-ti",
+    "permission_modes": ["filtered"],
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_ti.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["ORION-LOCAL-742"]
+  },
+  {
+    "id": "summary_001",
+    "question": "Résume les procédures disponibles.",
+    "profile": "demo-user",
+    "expected_behavior": "answer",
+    "expected_sources_any": ["procedure_acces.txt", "procedure_mot_de_passe.txt", "procedure_creation_rapport.txt"],
+    "forbidden_sources": ["procedure_ti.txt"],
+    "must_contain_any": []
+  },
+  {
+    "id": "lifecycle_modified_001",
+    "enabled": false,
+    "question": "Quelle est la valeur fictive ajoutée après modification du document de test ?",
+    "profile": "demo-user",
+    "expected_behavior": "answer",
+    "expected_sources_any": ["document_cycle_test.txt"],
+    "forbidden_sources": [],
+    "must_contain_any": ["VALEUR-MODIFIEE"],
+    "notes": "Activer après avoir préparé et synchronisé le document de cycle de vie."
+  },
+  {
+    "id": "lifecycle_deleted_001",
+    "enabled": false,
+    "question": "Quelle est la valeur fictive du document supprimé ?",
+    "profile": "demo-user",
+    "expected_behavior": "refusal",
+    "expected_sources_any": [],
+    "forbidden_sources": ["document_cycle_test.txt"],
+    "must_contain_any": ["Je ne trouve pas"],
+    "notes": "Activer après suppression et synchronisation du document de cycle de vie."
+  }
+]

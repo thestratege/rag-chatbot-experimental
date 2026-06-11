@@ -1,0 +1,92 @@
+{
+  "models": [
+    {
+      "model_id": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "provider_family": "Qwen",
+      "enabled": true,
+      "expected_strength": "Candidat prioritaire pour RAG documentaire en français: bonne capacité instruction-following, contexte long et famille Qwen pertinente pour une reproduction locale.",
+      "local_equivalent_ollama": "qwen3:8b ou qwen3:14b",
+      "notes": "À tester en priorité. Le résultat cloud sert à calibrer une future variante locale Qwen via Ollama."
+    },
+    {
+      "model_id": "meta-llama/llama-3.3-70b-instruct:free",
+      "provider_family": "Meta Llama",
+      "enabled": true,
+      "expected_strength": "Baseline généraliste multilingue forte pour comparer qualité de synthèse, français et respect des consignes RAG.",
+      "local_equivalent_ollama": "llama3.1:8b, llama3.1:70b ou llama3.3:70b selon capacité machine",
+      "notes": "Référence cloud utile. À ne pas interpréter comme cible locale réaliste sur une machine limitée."
+    },
+    {
+      "model_id": "openai/gpt-oss-20b:free",
+      "provider_family": "OpenAI OSS",
+      "enabled": true,
+      "expected_strength": "Comparaison gratuite raisonnable, potentiellement stable, intéressante pour instruction-following et contrôle d'hallucination.",
+      "local_equivalent_ollama": "gpt-oss:20b si disponible via Ollama, sinon comparer avec qwen3:14b",
+      "notes": "Candidat de comparaison pour vérifier si un modèle open-weight autour de 20B apporte un gain net."
+    },
+    {
+      "model_id": "deepseek/deepseek-v4-flash:free",
+      "provider_family": "DeepSeek",
+      "enabled": false,
+      "expected_strength": "A déjà produit des réponses 200 OK, bon compromis potentiel, mais sensible aux limites 429 observées.",
+      "local_equivalent_ollama": "deepseek-r1:7b ou deepseek-r1:14b",
+      "notes": "Garder en option. Le run 20260519_113108 a montré des succès mais aussi plusieurs 429."
+    },
+    {
+      "model_id": "google/gemma-4-31b-it:free",
+      "provider_family": "Google Gemma",
+      "enabled": false,
+      "expected_strength": "Candidat instruction-tuned multilingue intéressant pour français et synthèse documentaire.",
+      "local_equivalent_ollama": "gemma3:12b ou gemma3:27b selon disponibilité Ollama",
+      "notes": "Optionnel pour élargir la comparaison après le trio prioritaire."
+    },
+    {
+      "model_id": "google/gemma-4-26b-a4b-it:free",
+      "provider_family": "Google Gemma",
+      "enabled": false,
+      "expected_strength": "Candidat efficient de famille Gemma pour comparer vitesse et qualité en RAG.",
+      "local_equivalent_ollama": "gemma3:12b ou gemma3:27b selon disponibilité Ollama",
+      "notes": "Optionnel, à tester si les modèles prioritaires sont stables."
+    },
+    {
+      "model_id": "z-ai/glm-4.5-air:free",
+      "provider_family": "Z.ai GLM",
+      "enabled": false,
+      "expected_strength": "Modèle généraliste potentiellement bon en suivi d'instructions et synthèse.",
+      "local_equivalent_ollama": "glm-4 ou alternative Qwen selon disponibilité Ollama",
+      "notes": "Optionnel, moins directement aligné avec la cible locale pressentie."
+    },
+    {
+      "model_id": "nvidia/nemotron-nano-12b-v2-vl:free",
+      "provider_family": "NVIDIA Nemotron",
+      "enabled": false,
+      "expected_strength": "Modèle exploitable observé lors du benchmark qualité, intéressant comme candidat léger de comparaison anti-hallucination.",
+      "local_equivalent_ollama": "nemotron-nano:12b si disponible, sinon llama3.1:8b ou qwen3:8b comme approximation",
+      "notes": "Désactivé par défaut pour le safe benchmark, mais inclus dans le mini-test anti-hallucination."
+    },
+    {
+      "model_id": "qwen/qwen3-coder:free",
+      "provider_family": "Qwen",
+      "enabled": false,
+      "expected_strength": "Très intéressant pour code et procédures techniques, moins prioritaire pour RAG documentaire généraliste.",
+      "local_equivalent_ollama": "qwen3-coder ou qwen2.5-coder selon disponibilité Ollama",
+      "notes": "À garder pour un benchmark orienté documentation technique ou code."
+    },
+    {
+      "model_id": "openai/gpt-oss-120b:free",
+      "provider_family": "OpenAI OSS",
+      "enabled": false,
+      "expected_strength": "Référence cloud open-weight plus lourde pour qualité potentielle, moins réaliste comme cible locale directe.",
+      "local_equivalent_ollama": "gpt-oss:120b si machine très équipée, sinon gpt-oss:20b ou qwen3:14b",
+      "notes": "Optionnel. Peut servir de plafond de qualité, mais pas comme candidat local prioritaire."
+    },
+    {
+      "model_id": "meta-llama/llama-3.2-3b-instruct:free",
+      "provider_family": "Meta Llama",
+      "enabled": false,
+      "expected_strength": "Baseline légère et rapide, utile pour vérifier le minimum acceptable en RAG.",
+      "local_equivalent_ollama": "llama3.2:3b",
+      "notes": "Optionnel. Intéressant si la priorité devient latence/coût plutôt que qualité."
+    }
+  ]
+}

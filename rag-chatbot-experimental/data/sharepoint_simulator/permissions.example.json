@@ -1,0 +1,6 @@
+{
+  "procedure_publique.pdf": ["public"],
+  "procedure_ti.pdf": ["TI", "admin"],
+  "procedure_rh.pdf": ["RH", "admin"],
+  "procedure_gestionnaires.pdf": ["gestionnaires", "admin"]
+}

@@ -1,0 +1,7 @@
+Procédure fictive de demande d'accès
+
+Toute demande d'accès à une application interne doit être transmise par le gestionnaire de l'utilisateur au support. La demande doit contenir le nom complet de l'utilisateur, son service, le rôle demandé, la justification opérationnelle et la date souhaitée d'activation.
+
+Le support vérifie que la demande est complète. Si une validation métier est nécessaire, la demande est transmise au responsable applicatif. Une fois la validation obtenue, l'accès est créé et confirmé par courriel au gestionnaire.
+
+Les accès temporaires doivent inclure une date de fin. Les accès sans justification ou sans gestionnaire identifié sont refusés.
