@@ -998,39 +998,30 @@ La V1 gère explicitement :
 - Cette V1 n'est pas prête pour des données hautement sensibles en production.
 - Une version production devrait ajouter authentification, permissions, audit logs, chiffrement, monitoring et politiques de rétention.
 
-## Limites de cette V1
+## État et limites actuels
 
-- Pas d'authentification.
-- Pas de permissions par utilisateur ou par document.
-- Pas de reranking.
-- Pas de recherche hybride dense + sparse.
-- Chunking basé sur caractères, pas sur tokenizer exact.
-- Citations par page pour PDF lorsque disponible, mais pas encore par section/titre.
-- Réingestion globale plutôt que suppression/réingestion fine par document.
-- Pas d'évaluation automatique de la qualité des réponses.
-- Pas de streaming de réponse.
-- Pas de monitoring applicatif avancé.
+Le code contient déjà une recherche hybride vectorielle et lexicale, un reranking heuristique, une reformulation optionnelle, des citations, une authentification mock de démonstration et un simulateur SharePoint local avec réindexation incrémentale. Ces fonctions restent expérimentales et configurables.
 
-## Roadmap V2
+Limites à distinguer de ces fonctions existantes :
 
-- Migration vers Qdrant.
-- Recherche hybride dense + sparse.
-- Reranking.
-- Authentification.
-- Permissions utilisateurs.
-- Intégration SharePoint / Microsoft Graph.
-- Traçabilité des questions.
-- Dashboard d'évaluation.
-- Feedback utilisateur.
-- Évaluation automatique des réponses.
-- Monitoring.
-- Dockerisation complète.
-- Déploiement interne.
-- Support multilingue français/anglais.
-- Citations plus précises par page et section.
-- Gestion des documents mis à jour.
-- Suppression/réingestion par document.
-- Amélioration du chunking par titres et sections.
+- La validation JWT réelle Microsoft Entra ID n'est pas implémentée ; ce provider retourne volontairement HTTP 501.
+- L'authentification et le filtrage des permissions documentaires sont désactivés par défaut dans la configuration du POC.
+- Le simulateur ne constitue pas une intégration Microsoft Graph ou un Web Part SPFx.
+- Le chunking reste fondé sur des caractères, sans tokenizer exact par modèle.
+- Le reranking est heuristique ; aucune amélioration chiffrée de pertinence n'est établie ici.
+- Les sources et extraits ne constituent pas une garantie automatique de fidélité des réponses.
+- Le rate limiting par utilisateur, le streaming, le monitoring avancé et la validation de production restent à réaliser.
+- Les tests et outils d'évaluation présents dans le dépôt doivent être exécutés dans un environnement reproductible ; aucun résultat de qualité ou de latence n'est déduit de leur simple présence.
+
+L'audit détaillé et ses vérifications limitées sont documentés dans [PORTFOLIO_AUDIT.md](../docs/PORTFOLIO_AUDIT.md).
+
+## Prochaines étapes
+
+- Valider réellement les JWT Entra ID côté serveur et appliquer des permissions issues de l'identité vérifiée.
+- Remplacer la simulation par une intégration Microsoft Graph, puis ajouter une enveloppe SPFx si nécessaire.
+- Exécuter et consigner tests, évaluations documentaires et mesures sur des modèles et jeux de données identifiés.
+- Ajouter rate limiting, rétention des conversations, monitoring et déploiement contrôlé.
+- Évaluer Qdrant, un reranker appris et un chunking par tokenizer selon les besoins mesurés.
 
 ## Notes de conception
 
